@@ -6,13 +6,13 @@
   "private": true,
   "homepage": ".",
   "scripts": {
-    "start": "cross-env NODE_ENV=development DOMAIN=jiameicentury node ./scripts/server.js",
-    "start:prod": "cross-env NODE_ENV=production DOMAIN=jiameicentury node ./scripts/server.js",
-    "start:prod-s": "cross-env NODE_ENV=production DOMAIN=huaxinweilian node ./scripts/server.js",
-    "build": "cross-env NODE_ENV=development DOMAIN=jiameicentury node ./scripts/build.js",
-    "build-s": "cross-env NODE_ENV=development DOMAIN=huaxinweilian node ./scripts/build.js",
-    "build:prod": "cross-env NODE_ENV=production DOMAIN=jiameicentury node ./scripts/build.js",
-    "build:prod-s": "cross-env NODE_ENV=production DOMAIN=huaxinweilian node ./scripts/build.js",
+    "start": "cross-env NODE_ENV=development DOMAIN=DOMAIN node ./scripts/server.js",
+    "start:prod": "cross-env NODE_ENV=production DOMAIN=DOMAIN node ./scripts/server.js",
+    "start:prod-s": "cross-env NODE_ENV=production DOMAIN=DOMAIN node ./scripts/server.js",
+    "build": "cross-env NODE_ENV=development DOMAIN=DOMAIN node ./scripts/build.js",
+    "build-s": "cross-env NODE_ENV=development DOMAIN=DOMAIN node ./scripts/build.js",
+    "build:prod": "cross-env NODE_ENV=production DOMAIN=DOMAIN node ./scripts/build.js",
+    "build:prod-s": "cross-env NODE_ENV=production DOMAIN=DOMAIN node ./scripts/build.js",
     "dll": "npx webpack --config ./config/webpack_dll.config.js"
   },
   "devDependencies": {
@@ -67,7 +67,7 @@
     "webpack-cli": "3.3.12",
     "webpack-dev-server": "4.0.0",
     "webpack-merge": "5.8.0",
-    "zzy-javascript-devtools": "^1.4.3"
+    "zzy-javascript-devtools": "^1.5.2"
   },
   "browserslist": {
     "production": [
