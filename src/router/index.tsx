@@ -66,7 +66,7 @@ interface IRouteDom extends IRoute {
 const route: IRoute[] = [
   {
     path: '/',
-    module: '/page/index',
+    module: 'page/index',
   },
 
 ]
